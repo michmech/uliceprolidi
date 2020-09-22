@@ -7,6 +7,17 @@ const PORT=process.env.PORT||80;
 
 app.use(express.static(path.join(__dirname, "./")));
 
+//WWW redirect:
+function wwwRedirect(req, res, next){
+  if(/^[^\.]+\.[^\.]+$/.test(req.headers.host)){
+    var newHost="www."+req.headers.host;
+    return res.redirect(301, req.protocol+"://"+newHost+req.originalUrl);
+  }
+  next();
+};
+app.set("trust proxy", true);
+app.use(wwwRedirect);
+
 app.get("/", function(req, res){
   res.sendfile("index.html");
 });
