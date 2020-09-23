@@ -5,8 +5,6 @@ const http = require("http");
 const fs = require("fs");
 const PORT=process.env.PORT||80;
 
-app.use(express.static(path.join(__dirname, "./")));
-
 //WWW redirect:
 function wwwRedirect(req, res, next){
   if(/^[^\.]+\.[^\.]+$/.test(req.headers.host)){
@@ -18,9 +16,14 @@ function wwwRedirect(req, res, next){
 app.set("trust proxy", true);
 app.use(wwwRedirect);
 
+//static files:
+app.use(express.static(path.join(__dirname, "./")));
+
+//website root:
 app.get("/", function(req, res){
   res.sendfile("index.html");
 });
 
+//start the web server:
 app.listen(PORT);
 console.log("Process ID "+process.pid+" is now listening on port number "+PORT+".");
