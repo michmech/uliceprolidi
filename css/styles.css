@@ -324,7 +324,12 @@ strong {
 	font-size: 0.75rem;
 	font-weight: 500;
 }
-
+.form-control-input + .label-control {
+		top: 0.125rem;
+		opacity: 1;
+		font-size: 0.75rem;
+		font-weight: 500;
+}
 .form-control-input,
 .form-control-select {
 	display: block; /* needed for proper display of the label in Firefox, IE, Edge */

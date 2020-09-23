@@ -116,13 +116,13 @@
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
-                    <a href="https://www.facebook.com/stranazelenych/">
+                    <a target="_blank" href="https://www.facebook.com/zelenebrno/">
                         <span class="hexagon"></span>
                         <i class="fab fa-facebook-f fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
-                    <a href="https://twitter.com/zeleni_cz">
+                    <a target="_blank" href="https://twitter.com/zeleni_cz">
                         <span class="hexagon"></span>
                         <i class="fab fa-twitter fa-stack-1x"></i>
                     </a>
@@ -172,14 +172,84 @@
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-8">
-                    <div class="image-container">
-                        <!-- Then, in the player -->
-                        <video id="my-video" class="video-js vjs-fluid" controls preload="auto" width="500" height="500" poster="videos/video1.jpg" data-setup="{}">
-                          <source src="videos/video1.mp4" type="video/mp4" />
-                          <p class="vjs-no-js">Pro zobrazení videa potřebujete moderní prohlížeč, který <a href="https://videojs.com/html5-video-support/" target="_blank">podporuje JavaScript</a></p>
-                        </video>
-                        <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
-                    </div> <!-- end of image-container -->
+
+
+                  <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+                  <div class="accordion" id="videoAccordion" style="height: auto !important">
+
+                      <div class="item">
+                          <div id="videoHeading1">
+                              <span data-toggle="collapse" data-target="#videoBody1" aria-expanded="true" aria-controls="videoBody1" role="button">
+                                  <span class="circle-numbering">1</span><span class="accordion-title">Kauza Veveří</span>
+                              </span>
+                          </div>
+                          <div id="videoBody1" class="collapse show" aria-labelledby="videoHeading1" data-parent="#videoAccordion">
+                              <div class="accordion-body" style="padding-top: 10px;">
+                                <div class="image-container">
+                                    <!-- Then, in the player -->
+                                    <video id="my-video" class="video-js vjs-fluid" controls preload="auto" width="500" height="500" poster="videos/video1.jpg" data-setup="{}">
+                                      <source src="videos/video1.mp4" type="video/mp4" />
+                                      <p class="vjs-no-js">Pro zobrazení videa potřebujete moderní prohlížeč, který <a href="https://videojs.com/html5-video-support/" target="_blank">podporuje JavaScript</a></p>
+                                    </video>
+                                </div> <!-- end of image-container -->
+                              </div>
+                          </div>
+                      </div> <!-- end of item -->
+
+                      <div class="item">
+                          <div id="videoHeading2">
+                              <span class="collapsed" data-toggle="collapse" data-target="#videoBody2" aria-expanded="false" aria-controls="videoBody2" role="button">
+                                  <span class="circle-numbering">2</span><span class="accordion-title">Kauza přechod Nové Sady</span>
+                              </span>
+                          </div>
+                          <div id="videoBody2" class="collapse" aria-labelledby="videoHeading2" data-parent="#videoAccordion">
+                              <div class="accordion-body" style="padding-top: 10px;">
+                                <div class="image-container">
+                                    <!-- Then, in the player -->
+                                    <video id="my-video" class="video-js vjs-fluid" controls preload="auto" width="500" height="500" poster="videos/video2.jpg" data-setup="{}">
+                                      <source src="videos/video2.mp4" type="video/mp4" />
+                                      <p class="vjs-no-js">Pro zobrazení videa potřebujete moderní prohlížeč, který <a href="https://videojs.com/html5-video-support/" target="_blank">podporuje JavaScript</a></p>
+                                    </video>
+                                </div> <!-- end of image-container -->
+                              </div>
+                          </div>
+                      </div> <!-- end of item -->
+
+                      <div class="item">
+                          <div id="videoHeading3">
+                              <span class="collapsed" data-toggle="collapse" data-target="#videoBody3" aria-expanded="false" aria-controls="videoBody3" role="button">
+                                  <span class="circle-numbering">3</span><span class="accordion-title">Kauza přechod u Vaňkovky</span>
+                              </span>
+                          </div>
+                          <div id="videoBody3" class="collapse" aria-labelledby="videoHeading3" data-parent="#videoAccordion">
+                              <div class="accordion-body" style="padding-top: 10px;">
+                                <div class="image-container">
+                                    <!-- Then, in the player -->
+                                    <video id="my-video" class="video-js vjs-fluid" controls preload="auto" width="500" height="500" poster="videos/video3.jpg" data-setup="{}">
+                                      <source src="videos/video3.mp4" type="video/mp4" />
+                                      <p class="vjs-no-js">Pro zobrazení videa potřebujete moderní prohlížeč, který <a href="https://videojs.com/html5-video-support/" target="_blank">podporuje JavaScript</a></p>
+                                    </video>
+                                </div> <!-- end of image-container -->
+                              </div>
+                          </div>
+                      </div> <!-- end of item -->
+
+                      <div class="item">
+                          <div id="videoHeading4">
+                              <span class="collapsed" data-toggle="collapse" data-target="#videoBody4" aria-expanded="false" aria-controls="videoBody4" role="button">
+                                  <span class="circle-numbering">4</span><span class="accordion-title">Další kauzy zveřejníme brzy...</span>
+                              </span>
+                          </div>
+                          <div id="videoBody4" class="collapse" aria-labelledby="videoHeading3" data-parent="#videoAccordion">
+                              <div class="accordion-body">
+                                <p>Nebo nám pošlete vlastní tip na kauzu: <a target="_blank" href="http://www.zelenebrno.cz/">www.zelenebrno.cz</a></p>
+                              </div>
+                          </div>
+                      </div> <!-- end of item -->
+
+                    </div>
+
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -249,7 +319,7 @@
                         </div>
                         <div class="form-group">
                             <input type="hidden" name="country"  value="CZ"/>
-                            <button type="submit" class="form-control-submit-button" style="font-size:120%;display:none" id="simple_submit" value="Submit">PODEPSAT PETICI</button>
+                            <button type="submit" class="form-control-submit-button" style="font-size:120%;display:none" id="simple_submit" value="Submit">PODEPSAT VÝZVU</button>
                         </div>
                         <div class="form-message" id="success">
                             <div id="lmsgSubmit" class="h3 text-center hidden"></div>
@@ -278,7 +348,7 @@ $(document).ready(function(e) {
 
 
 var options = {
-        endpoint: "https://actionnetwork.org/api/v2/forms/8303fcf7-c8a7-42c7-be3b-1cf76d6d1644/sumbissions",
+        endpoint: "https://actionnetwork.org/api/v2/forms/8303fcf7-c8a7-42c7-be3b-1cf76d6d1644/submissions",
         add_tags:['uliceprolidi'],
 
 
@@ -525,7 +595,7 @@ checkbox.addEventListener('change', (event) => {
                 <div class="col-lg-12">
                     <h2>Podpořte nás</h2>
                     <p class="p-heading">Strana zelených dlouhodobě usiluje o udržitelnou dopravu ve městech. Podpořte prosím naši práci finančním darem.<br><br>
-                    <a class="btn-solid-lg page-scroll" href="https://dary.zeleni.cz/brno?utm_medium=web&utm_source=link_dary&utm_campaign=uliceprolidi">Podpořte nás finančním darem</a></p>
+                    <a class="btn-solid-lg page-scroll" target="_blank" href="https://dary.zeleni.cz/brno?utm_medium=web&utm_source=link_dary&utm_campaign=uliceprolidi">Podpořte nás finančním darem</a></p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -549,10 +619,10 @@ checkbox.addEventListener('change', (event) => {
                     <div class="text-container">
                         <ul class="list-unstyled li-space-lg">
                             <li><i class="fas fa-square" style="color:#60b44c;font-size:60%"></i>
-                                <a class="white" href="http://www.zeleni.cz/">www.zeleni.cz</a>
+                                <a class="white" href="http://www.zelenebrno.cz/">www.zelenebrno.cz</a>
                             </li>
                             <li><i class="fas fa-square" style="color:#60b44c;font-size:60%"></i>
-                                <a class="white" href="http://www.zelenebrno.cz/">www.zelenebrno.cz</a>
+                                <a class="white" href="http://www.zeleni.cz/">www.zeleni.cz</a>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -569,9 +639,10 @@ checkbox.addEventListener('change', (event) => {
                 <div class="col-lg-12">
                     <p class="p-small">
                       Foto:
-                      <a href="https://www.flickr.com/photos/pixelmuell/48684550732/in/photolist-2hb63MJ-2gZ8uma-2gE3Ui8-aa54tA-2hoWdpP-2iKMscC-9bmtYL-2gSB8HY-Fu3AnQ-HYRYWx-LgUfMW-FkJpQh-CCpxGD-FkEwBm-LavQRf-7goS3-LavRej-LgUhkq-LgUh1h-Fu3T1j-LgUg4C-LavQK3-LgUgNy-EysQ4m-LgUhaL-FwnoBV-CccTip-64TesS-LavPj7-2iVjJXX-bTXea-FnX1mK-Fu5Dcy-CHpjCN-FnWT6x-Fu3LyG-LNVxMF-64NWuH-F4NNYY-GVBW4w-saqeEz-LavPvE-XqqdHJ-5TECMU-FnYDfT-FkJqQU-LavPFj-EyMiVg-BNc9aJ-2ayKXcv">Paul Korecky</a>
+                      <a target="_blank" href="https://www.flickr.com/photos/pixelmuell/48684550732/in/photolist-2hb63MJ-2gZ8uma-2gE3Ui8-aa54tA-2hoWdpP-2iKMscC-9bmtYL-2gSB8HY-Fu3AnQ-HYRYWx-LgUfMW-FkJpQh-CCpxGD-FkEwBm-LavQRf-7goS3-LavRej-LgUhkq-LgUh1h-Fu3T1j-LgUg4C-LavQK3-LgUgNy-EysQ4m-LgUhaL-FwnoBV-CccTip-64TesS-LavPj7-2iVjJXX-bTXea-FnX1mK-Fu5Dcy-CHpjCN-FnWT6x-Fu3LyG-LNVxMF-64NWuH-F4NNYY-GVBW4w-saqeEz-LavPvE-XqqdHJ-5TECMU-FnYDfT-FkJqQU-LavPFj-EyMiVg-BNc9aJ-2ayKXcv">Paul Korecky</a>
                       a
-                      <a href="https://www.flickr.com/photos/lemsipmatt/9869161293/in/photolist-g372Pk-F4NRS3-8kbzhD-Fu5CuG-pJChav-LgUgvj-FwnqnP-6XAWNB-FkMm4y-qoPhUd-F4NZuN-Fwnfoa-Fu5SYm-FkGhHL-FwnATD-F4QJXh-Eysmgh-GViyMh-FkEpS9-8KtNvA-EysEfd-63XfdP-8PdDWd-ezNK57-Fu5NGf-3jRxJq-FkMohw-FkG6mC-FwnuMk-FwnFG6-ffemnz-FnXb3D-FkEsR5-Fo4kBX-f5ByL-FkFVsE-CA9TMb-EyStFD-FwnDG4-AVAx9-LgUfyQ-EyuCUo-ECxcT-FkGj9G-22iqRxW-fftAs1-FuaxCC-F4TBHG-EyTRQr-254nL9M/">Lemsipmatt</a>
+                      <a target="_blank" href="https://www.facebook.com/Mapa-z%C3%A1sobovac%C3%ADch-vozidel-v-Brn%C4%9B-113466870068463/photos/a.113751586706658/185443996204083">Marek Lupač</a>
+                      <!-- <a href="https://www.flickr.com/photos/lemsipmatt/9869161293/in/photolist-g372Pk-F4NRS3-8kbzhD-Fu5CuG-pJChav-LgUgvj-FwnqnP-6XAWNB-FkMm4y-qoPhUd-F4NZuN-Fwnfoa-Fu5SYm-FkGhHL-FwnATD-F4QJXh-Eysmgh-GViyMh-FkEpS9-8KtNvA-EysEfd-63XfdP-8PdDWd-ezNK57-Fu5NGf-3jRxJq-FkMohw-FkG6mC-FwnuMk-FwnFG6-ffemnz-FnXb3D-FkEsR5-Fo4kBX-f5ByL-FkFVsE-CA9TMb-EyStFD-FwnDG4-AVAx9-LgUfyQ-EyuCUo-ECxcT-FkGj9G-22iqRxW-fftAs1-FuaxCC-F4TBHG-EyTRQr-254nL9M/">Lemsipmatt</a> -->
                     </p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
